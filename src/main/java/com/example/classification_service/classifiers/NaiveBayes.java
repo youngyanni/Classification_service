@@ -1,0 +1,5 @@
+package com.example.classification_service.classifiers;
+
+public class NaiveBayes {
+
+}
