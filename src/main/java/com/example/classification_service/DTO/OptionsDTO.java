@@ -6,20 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Optionss {
+public class OptionsDTO {
     @JsonProperty(value = "flags")
-    private ArrayList<String> option;
-
-
-    public String[] toArray(String[] strings) {
-        return strings;
-    }
-
-    public int size() {
-        return 0;
-    }
+    private Map<String, String> option;
 }

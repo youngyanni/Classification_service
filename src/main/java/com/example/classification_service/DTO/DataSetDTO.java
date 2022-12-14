@@ -5,16 +5,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
+import weka.core.Attribute;
+
+import java.util.ArrayList;
+
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Instances {
+public class DataSetDTO {
     @JsonProperty(value = "name")
     private String name;
     @JsonProperty(value = "attributeName")
-    private List<String> attributeName;
+    private ArrayList<Attribute> attributeName;
     @JsonProperty(value = "capacity")
     private int capacity;
 }
